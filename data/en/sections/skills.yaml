@@ -1,71 +1,45 @@
-# section information
 section:
-  name: Skills
-  id: skills
-  enable: true
-  weight: 2
-  showOnNavbar: true
-  filter: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
+  name: Skills # Title of section (default: "")
+  id: skills # url id/slug of section *Required*
+  enable: true # Boolean to determine if this section is enabled (default: false)
+  weight: 7 # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
+  # template: sections/skills.html # allows you to point to a specific template.
 
-# filter buttons
-buttons:
-- name: All
-  filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
-- name: Container
-  filter: "container"
-- name: Others
-  filter: "others"
-
-# Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  categories: ["container"]
-  url: "https://kubernetes.io/"
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "Python is my main programming language. I use it for data analysis, machine learning, and basic web development for data presentation. I am familiar with the following libraries: NumPy, SciPy, Pandas, Matplotlib, Scikit-learn, Dash, Plotly."
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
-
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
-
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["container"]
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
-  url: "https://prometheus.io/"
-
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
-
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
-  url: "https://git-scm.com/"
+- name: Tensorflow
+  logo: "/images/sections/skills/tensorflow.png"
+  summary: "Capable of building and training neural networks using Tensorflow. Experienced with Keras, but also able to deploy pre-trained models. Usecases vary from natural language processing to particle tagging."
 
 - name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
+  logo: "/images/sections/skills/c++.png"
+  summary: "Know basic C/C++ programming. Used for data processing with [ROOT](root.cern) library. Mainly used for scientific computing and data analysis."
+
+- name: ROOT
+  logo: "/images/sections/skills/root.png"
+  # icon: "fa-brands fa-git"
+  summary: "[ROOT](root.cern) is a C++ framework for data analysis develped by CERN for scientific computing. Know basic usage of data analysis, such as histograms, TTrees, and data processing."
+
+- name: Docker
+  logo: "/images/sections/skills/docker.png"
+  summary: "Usually I deploy programs with docker. Also experienced with docker-compose."
+
+
+- name: Linux
+  logo: "/images/sections/skills/linux.png"
+  summary: "Using Linux as development OS. Capable of writing basic bash scripts."
+
+- name: Git
+  logo: "/images/sections/skills/git.png"
+  # icon: "fa-brands fa-git"
+  summary: "All my project are version controlled using git. Using mostly GitHub, occasionally GitLab."
+
+- name: Slurm
+  logo: "/images/sections/skills/slurm.png"
+  # icon: "fa-brands fa-git"
+  # summary: "All my project are version controlled using git. Using mostly GitHub, occasionally GitLab."
+  summary: "Using Slurm for job processing on HPC clusters, both CPU and GPU farms. Experienced with job submission, monitoring, and job management."

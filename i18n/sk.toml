@@ -1,0 +1,130 @@
+# More documentation here: https://github.com/nicksnyder/go-i18n
+[home]
+other = "Domov"
+
+[posts]
+other = "Príspevky"
+
+[toc_heading]
+other = "Obsah"
+
+[tags]
+other = "Tagy"
+
+[categories]
+other = "Kategórie"
+
+[at]
+other = "na"
+
+[resume]
+other = "Môj životopis"
+
+[navigation]
+other = "Navigácia"
+
+[contact_me]
+other = "Kontaktujte ma"
+
+[email]
+other = "Email"
+
+[phone]
+other = "Telefón"
+
+[newsletter_text]
+other = "Pridajte sa k odberu noviniek a dostávajte upozornenia o nových príspevkoch a aktualizáciách."
+
+[newsletter_input_placeholder]
+other = "Váš email"
+
+[newsletter_warning]
+other = "Vložením svojej e-mailovej adresy súhlasíte s prijímaním noviniek tejto webovej stránky."
+
+[submit]
+other = "Odoslať"
+
+[hugoAttributionText]
+other = "Poháňané"
+
+[prev]
+other = "Predchádzajúci"
+
+[next]
+other = "Ďalší"
+
+[share_on]
+other = "Zdieľať na"
+
+[improve_this_page]
+other = "Vylepšiť túto stránku"
+
+[out_of]
+other = "z"
+
+[publications]
+other = "Publikácie"
+
+[taken_courses]
+other = "Absolvované kurzy"
+
+[course_name]
+other = "Názov kurzu"
+
+[total_credit]
+other = "Celkový počet kreditov"
+
+[obtained_credit]
+other = "Získané kredity"
+
+[extracurricular_activities]
+other = "Mimoškolské aktivity"
+
+[show_more]
+other = "Zobraziť viac"
+
+[show_less]
+other = "Zobraziť menej"
+
+[responsibilities]
+other = "Zodpovednosti:"
+
+[present]
+other = "Súčasnosť"
+
+[comments_javascript]
+other = "Prosím, povolte JavaScript na zobrazenie"
+
+[comments_by]
+other = "Komentáre od"
+
+[read]
+other = "Čítať"
+
+[project_star]
+other = "Hviezda"
+
+[project_details]
+other = "Podrobnosti"
+
+[err_404]
+other = "Stránka nebola nájdená."
+
+[more]
+other = "Viac"
+
+[view_certificate]
+other = "Zobraziť certifikát"
+
+[notes]
+other = "Poznámky"
+
+[disclaimer_text]
+other = "Oznam o zodpovednosti"
+
+[search]
+other = "Hľadať"
+
+[minute]
+one = "minúta"
+other = "minút"

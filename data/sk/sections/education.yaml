@@ -1,5 +1,5 @@
 section:
-  name: Education
+  name: Vzdelanie
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
@@ -9,30 +9,29 @@ section:
   # hideTitle: true
 
 degrees:
-  - name: Mgr. (MSc.) in Particle and Nuclear Physics
+  - name: Mgr. Časticová a jadrová fyzika
     icon: fa-graduation-cap
-    timeframe: 2023-2025
+    timeframe: 2023-
     institution:
-      name: Faculty of Mathematics and Physics, Charles University
-      url: "https://www.mff.cuni.cz/en/"
-
+      name: Matematicko-fyzikálna fakulta, Univerzita Karlova
+      url: "https://www.mff.cuni.cz/"
+    # grade: #(optional)
+    #   scale: CGPA
+    #   achieved: 3.5
+    #   outOf: 4
     takenCourses: #(optional)
       # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
       showGrades: false
       collapseAfter: 3
       courses:
-        - name: Quantum Field Theory (I, II, III)
+        - name: Kvantová teória poľa (I, II, III)
           achieved: 1 (A)
-        - name: Thoery of Electroweak Interactions
+        - name: Teória elektroslabých interakcií
           achieved: 1 (A)
-        - name: Quantum Chromodynamics
+        - name: Kvantová chromodynamika
           achieved: 1 (A)
-        - name: Physics of Detectors and Accelerators
+        - name: Fyzika detektorov a urýchľovačov
           achieved: 1 (A)
-    # grade: #(optional)
-    #   scale: CGPA
-    #   achieved: 3.5
-    #   outOf: 4
     # publications: #(optional)
     #   - title: Fake tau background in excited tau search
     #     url: "https://drive.google.com/file/d/1k7So9AuAj62re_s0pZRw0U2cgkDUlR0y/view?usp=sharing"
@@ -54,77 +53,82 @@ degrees:
       showGrades: false
       collapseAfter: 3
       courses:
-        - name: Sherpa, Herwig, Pythia Tutorial
+        - name: Sherpa, Herwig, Pythia cvičenie
         - name: Parton Shower and Matching/Merging
         - name: NLO and higher-order calculations
         - name: PDFs, uncertainties
         - name: Resummation
 
-  - name: Bc. (BSc.) in Physics
+  - name: Bc. Fyzika
     icon: fa-graduation-cap
     timeframe: 2020-2023
     institution:
-      name: Faculty of Mathematics and Physics, Charles University
-      url: "https://www.mff.cuni.cz/en/"
+      name: Matematicko-fyzikálna fakulta, Univerzita Karlova
+      url: "https://www.mff.cuni.cz/"
     grade: #(optional)
-      scale: ECTS 
-      achieved: red diploma, 1 (A)
-      outOf: 4 (F)
+      scale: ECTS
+      achieved: červený diplom, 1 (A)
+      outOf: 4 (F) 
     takenCourses: #(optional)
       # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
       showGrades: false
       collapseAfter: 3
       courses:
-        - name: General Relativity
+        - name: Všeobecná relativity
           achieved: 1 (A)
           # outOf: 4
-        - name: Deep Learning
+        - name: Hlboké učenie
           achieved: 1 (A)
           # outOf: 4
-        - name: Mathematical Analysis
+        - name: Matematická analýza
           achieved: 1 (A)
           # outOf: 4
-        - name: Theoretical Mechanics
+        - name: Teoretická mechanika
           achieved: 1 (A)
     publications: #(optional)
-      - title: Fake tau background in excited tau search
+      - title: Fake tau pozadie v hľadaní excitovaných tau
         url: "https://drive.google.com/file/d/1k7So9AuAj62re_s0pZRw0U2cgkDUlR0y/view?usp=sharing"
-      - title: Quark/Gluon Jet Tagging (Bachelor Thesis, supervised by Mgr. Vojtěch Pleskot Ph.D.)
+      - title: Tagovanie jetov pochádzajúcich z kvarkov a gluónov (Bakalárska práca, pod vedením Mgr. Vojtěcha Pleskota Ph.D.)
         url: "https://github.com/jansam123/bachelor_thesis"
     extracurricularActivities: #(optional)
-      - Summer School Project
+      - Letný študentský projekt
 
-  - name: Georg-August-Universität Göttingen
+  - name: Letná škola
     icon: fa-sun
     timeframe: 2020
     institution:
-      name: HASCO Summer School
+      name: HASCO
       url: "https://indico.cern.ch/event/1122790/"
     # grade: #(optional)
-    #   scale: Grade
+    #   scale: Známka
     #   achieved: A
       # outOf: 100
     takenCourses: #(optional)
       showGrades: false
       collapseAfter: 3
       courses:
-        - name: Hadron Collider Physics
-        - name: Standard Model and Electroweak Physics
-        - name: Physics of the Higgs Boson
-        - name: ROOT lecture and tutorial
-        - name: Advanced Statistics (Machine Learning)
-        - name: Quantum Chromodynamics
-        - name: Detector Physics
-        - name: Accelerator Physics
+        - name: Fyzika hadronového urýchľovača
+        - name: Štandardný model a teória elektroslabých interackií
+        - name: Fyzika Higgsovho bosónu
+        - name: ROOT prednáška a cvičenie
+        # - name: Advanced Statistics (Machine Learning)
+        - name: Pokročilá štatistika (Strojové učenie)
+        # - name: Quantum Chromodynamics
+        - name: Kvantová chromodynamika
+        # - name: Detector Physics
+        - name: Fyzika detektorov
+        # - name: Accelerator Physics
+        - name: Fyzika urýchľovačov
 
-  - name: 8-year Gymnasium
+  - name: 8-ročné gymnázium
     icon: fa-school
     timeframe: 2012-2020
     institution:
-      name: Gymnasium Tilgnerova
+      name: Gymnázium Tilgnerova
       url: "https://tilgnerka.edupage.org/"
     extracurricularActivities: #(optional)
-      - Poster presentation at the 24th Conference of Slovak Physicists
+      # - Poster presentation at the 24th Conference of Slovak Physicists
+      - Posterová prezentácia na 24. konferencii slovenských fyzikov
     # grade: #(optional)
     #   scale: GPA
     #   achieved: 4.5

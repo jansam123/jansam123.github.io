@@ -1,18 +1,18 @@
 section:
-  name: About # Title of section (default: "")
+  name: O mne # Title of section (default: "")
   id: about # url id/slug of section *Required*
   enable: true # Boolean to determine if this section is enabled (default: false)
   weight: 1 # Order to display section in (default: alphabetical followed by weight)
   showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
   template: sections/about.html # allows you to point to a specific template.
 
-designation: Physics Master Student
+designation: Študent fyziky
 # your company information
 company:
-  name: Charles University
-  url: "https://www.mff.cuni.cz/en/"
+  name: Karlovej univerzite
+  url: "https://www.mff.cuni.cz/"
 
-summary: I am an **aspiring physicist** with passion for coding. I analyze data from particle detectors and develop tools for **physical data analysis**. My interests include **Deep Learning** and it's usage in **High Energy Physics** (HEP), data science, and **software development**. I am currently doing a reaserch on Jet Identification using Deep Neural Networks ([JIDENN](https://github.com/jansam123/JIDENN)).
+summary: Som začínajúci fyzik s vášnou pre programovanie. Analyzujem dát z detektorov častíc a programujem nátroje na spracovanie dát. Medzi moje zájumi patrí **hlboké učenie** a jeho využitie vo **fyzike vysokých energií** (HEP), **data science** a **softvérové inžinierstvo**. Momentálne pracujem výskume Identifikácii Jetov pomocou Hlbokých Neurónových Sietí ([JIDENN](https://github.com/jansam123/JIDENN)).
 
 socialLinks:
   - name: Email
@@ -28,6 +28,9 @@ socialLinks:
   #   url: "https://www.linkedin.com/in/jansam123/"
 
 resume: "files/CV.pdf"
+# resourceLinks:
+  # - title: "Moje CV"
+    # url: "files/CV.pdf"
 # - type: soft-skill-indicator
 #   name: Leadership
 #   percentage: 85
