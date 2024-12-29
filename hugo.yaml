@@ -192,6 +192,7 @@ params:
     toc:
       enable: true
 
+
     # Show tags under the post title
     tags:
       enable: true
