@@ -96,17 +96,28 @@ html[data-theme="dark"] .home .content {
 
 @media only screen and (max-width: 576px) {
     .home img {
-            width: 150px;
-            max-width: 70%;
+            width: 300px;
+            // max-width: 75%;
             height: auto;
         }
+    .home .content {
+      width: 80%;
+    }
 }
 
 @media (max-width: 640px) {
   .home img {
-            width: 150px;
-            max-width: 70%;
+            width: 300px;
+            // max-width: 75%;
             height: auto;
         }
+  .home .content {
+      width: 80%;
+  }
 }
 
+@media (max-width: 1000px) {
+  .home .content {
+      width: 40%;
+  }
+}
