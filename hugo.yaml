@@ -33,7 +33,11 @@ languages:
 # default language for the content
 defaultContentLanguage: en
 
-
+imaging:
+  quality: 95
+  resampleFilter: Lanczos
+  anchor: Smart
+  
 # Allow raw html in markdown file
 markup:
   goldmark:
