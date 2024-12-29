@@ -66,7 +66,11 @@
 &lt;/li>
 &lt;li>Open a web browser and go to &lt;a href="https://localhost:9200/win1" target="_blank" rel="noopener">&lt;code>localhost:9200/win1&lt;/code>&lt;/a> to see the TBrowser:&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://samueljankovych.com/posts/tbrowser/TBrowser_screenshot.jpg" alt="TBrowser screenshot">&lt;/p></description></item><item><title>Jet Identification Deep Neural Network</title><link>https://samueljankovych.com/posts/jidenn/</link><pubDate>Fri, 16 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/jidenn/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;img src="https://samueljankovych.com/posts/tbrowser/TBrowser_screenshot.jpg" alt="TBrowser screenshot">&lt;/p></description></item><item><title>Tips and Tricks</title><link>https://samueljankovych.com/posts/tips_and_tricks/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/tips_and_tricks/</guid><description>&lt;h1 id="tips-and-tricks">Tips and Tricks&lt;/h1>
+&lt;h2 id="gitlatexdiffhttpstwikicernchtwikibinviewauthatlasprotectedpubcomlatexdiffgit_latexdiff_command">&lt;a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/PubComLaTeXDiff#git_latexdiff_command" target="_blank" rel="noopener">Git+latexdiff&lt;/a>&lt;/h2>
+&lt;p>Generate a latexdiff between two commits&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git latexdiff 0db4b84289f7554810cfdaacf7bafdbab23466b2 -- --main ANA-JETM-2023-07-PUB.tex
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Jet Identification Deep Neural Network</title><link>https://samueljankovych.com/posts/jidenn/</link><pubDate>Fri, 16 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/jidenn/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This is a deep neural network for jet identification.&lt;/p>
 &lt;h2 id="data">Data&lt;/h2>
 &lt;h2 id="architecture">Architecture&lt;/h2></description></item><item><title/><link>https://samueljankovych.com/posts/arch_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samueljankovych.com/posts/arch_linux/</guid><description>&lt;h1 id="arch-linux-installationhttpswikiarchlinuxorgtitleinstallation_guide">&lt;a href="https://wiki.archlinux.org/title/installation_guide" target="_blank" rel="noopener">Arch Linux Installation&lt;/a>&lt;/h1>
@@ -81,8 +85,4 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This package contains the UEFI firmware for QEMU.
 Copy the UEFI firmware to the current directory:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cp /usr/share/edk2/x64/OVMF_VARS.fd .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Boot the ISO image with QEMU:&lt;/p></description></item><item><title/><link>https://samueljankovych.com/posts/tips_and_tricks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samueljankovych.com/posts/tips_and_tricks/</guid><description>&lt;h1 id="tips-and-tricks">Tips and Tricks&lt;/h1>
-&lt;h2 id="gitlatexdiffhttpstwikicernchtwikibinviewauthatlasprotectedpubcomlatexdiffgit_latexdiff_command">&lt;a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/PubComLaTeXDiff#git_latexdiff_command" target="_blank" rel="noopener">Git+latexdiff&lt;/a>&lt;/h2>
-&lt;p>Generate a latexdiff between two commits&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git latexdiff 0db4b84289f7554810cfdaacf7bafdbab23466b2 -- --main ANA-JETM-2023-07-PUB.tex
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Boot the ISO image with QEMU:&lt;/p></description></item></channel></rss>
