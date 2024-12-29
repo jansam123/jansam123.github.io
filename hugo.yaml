@@ -22,7 +22,7 @@ module:
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   en:
-    languageCode: en
+    languageCode: en 
     languageName: English
     title: Samuel Jankovych
     weight: 1
@@ -34,11 +34,6 @@ languages:
 # default language for the content
 defaultContentLanguage: en
 
-imaging:
-  quality: 95
-  resampleFilter: Lanczos
-  anchor: Smart
-  
 # Allow raw html in markdown file
 markup:
   goldmark:
