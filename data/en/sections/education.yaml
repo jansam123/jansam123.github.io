@@ -9,13 +9,23 @@ section:
   # hideTitle: true
 
 degrees:
+  - name: PhD in Particle Physics
+    icon: fa-graduation-cap
+    timeframe: 2025-present
+    institution:
+      name: Nikhef / University of Amsterdam
+      url: "https://www.nikhef.nl/en/"
+
   - name: Mgr. (MSc.) in Particle and Nuclear Physics
     icon: fa-graduation-cap
     timeframe: 2023-2025
     institution:
       name: Faculty of Mathematics and Physics, Charles University
       url: "https://www.mff.cuni.cz/en/"
-
+    grade: #(optional)
+      scale: ECTS 
+      achieved: red diploma, 1 (A)
+      outOf: 4 (F)
     takenCourses: #(optional)
       # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
       showGrades: false
@@ -29,37 +39,10 @@ degrees:
           achieved: 1 (A)
         - name: Physics of Detectors and Accelerators
           achieved: 1 (A)
-    # grade: #(optional)
-    #   scale: CGPA
-    #   achieved: 3.5
-    #   outOf: 4
-    # publications: #(optional)
-    #   - title: Fake tau background in excited tau search
-    #     url: "https://drive.google.com/file/d/1k7So9AuAj62re_s0pZRw0U2cgkDUlR0y/view?usp=sharing"
-    #   - title: Quark\Gluon Jet Tagging (Bachelor Thesis)
-    #     url: "https://github.com/jansam123/bachelor_thesis"
-    # extracurricularActivities: #(optional)
-    #   - Summer School Project
-  - name: DESY, Hamburg
-    icon: fa-sun
-    timeframe: 2024
-    institution:
-      name: Terascale Monte Carlo School
-      url: "https://indico.desy.de/event/42810/overview"
-    # grade: #(optional)
-    #   scale: Grade
-    #   achieved: A
-      # outOf: 100
-    takenCourses: #(optional)
-      showGrades: false
-      collapseAfter: 3
-      courses:
-        - name: Sherpa, Herwig, Pythia Tutorial
-        - name: Parton Shower and Matching/Merging
-        - name: NLO and higher-order calculations
-        - name: PDFs, uncertainties
-        - name: Resummation
-
+    publications: #(optional)
+      - title: Calibration of an AI-based quark/gluon tagger (Master Thesis, supervised by Mgr. Vojtěch Pleskot Ph.D.)
+        url: "https://dspace.cuni.cz/handle/20.500.11956/199554"
+        
   - name: Bc. (BSc.) in Physics
     icon: fa-graduation-cap
     timeframe: 2020-2023
@@ -90,9 +73,28 @@ degrees:
       - title: Fake tau background in excited tau search
         url: "https://drive.google.com/file/d/1k7So9AuAj62re_s0pZRw0U2cgkDUlR0y/view?usp=sharing"
       - title: Quark/Gluon Jet Tagging (Bachelor Thesis, supervised by Mgr. Vojtěch Pleskot Ph.D.)
-        url: "https://github.com/jansam123/bachelor_thesis"
+        url: "https://dspace.cuni.cz/handle/20.500.11956/182597"
     extracurricularActivities: #(optional)
       - Summer School Project
+  - name: DESY, Hamburg
+    icon: fa-sun
+    timeframe: 2023
+    institution:
+      name: Terascale Monte Carlo School
+      url: "https://indico.desy.de/event/42810/overview"
+    # grade: #(optional)
+    #   scale: Grade
+    #   achieved: A
+      # outOf: 100
+    takenCourses: #(optional)
+      showGrades: false
+      collapseAfter: 3
+      courses:
+        - name: Sherpa, Herwig, Pythia Tutorial
+        - name: Parton Shower and Matching/Merging
+        - name: NLO and higher-order calculations
+        - name: PDFs, uncertainties
+        - name: Resummation
 
   - name: Georg-August-Universität Göttingen
     icon: fa-sun

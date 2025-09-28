@@ -18,6 +18,18 @@ section:
 
 # your projects
 projects:
+  - name: ATLAS Hadronic Identification Workshop 2025
+    role: Dva talky
+    timeline: "September 2025, CERN, Ženeva, Švajčiarsko"
+    url: "https://indico.cern.ch/event/1552037/overview"
+    summary: "q/g tagger: vývoj a kalibrácie"
+    tags: ["ATLAS", "Quark Gluon Taggovanie", "Kalibrácia", "ML"]
+  - name: ATLAS Hadronic Calibration Workshop 2025
+    role: Predseda Sekcie
+    timeline: "September 2025, Sheffield, UK"
+    url: "https://indico.cern.ch/event/1500189/overview"
+    summary: "Jet Tagging: Kalibrácie"
+    tags: ["ATLAS", "Jet Tagging", "Kalibrácie", "Scale Factory"]
   - name: ATLAS Hadronic Calibration Workshop 2024
     role: Blesková Prezentácia
     timeline: "September 2024, Ottawa, Kanada"

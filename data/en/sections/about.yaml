@@ -6,13 +6,14 @@ section:
   showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
   template: sections/about.html # allows you to point to a specific template.
 
-designation: Physics Master Student
+designation: Particle Physics PhD Candidate
 # your company information
 company:
-  name: Charles University
-  url: "https://www.mff.cuni.cz/en/"
+  name: Nikhef
+  url: "https://www.nikhef.nl/en/"
 
-summary: I am an **aspiring physicist** with passion for coding. I analyze data from particle detectors and develop tools for **physical data analysis**. My interests include **Deep Learning** and it's usage in **High Energy Physics** (HEP), data science, and **software development**. I am currently doing a reaserch on Jet Identification using Deep Neural Networks ([JIDENN](https://github.com/jansam123/JIDENN)).
+summary: I am a **particle physicist** with a passion for coding who specializes in analyzing data from particle detectors and developing sophisticated tools for physical data analysis. My research interests span **deep learning** applications in High Energy Physics (HEP), particle physics, data science, and software development. Currently, I am conducting research on **diHiggs** event production at the ATLAS experiment, focusing on decay channels involving two b-jets and two tau leptons.
+
 
 socialLinks:
   - name: Email

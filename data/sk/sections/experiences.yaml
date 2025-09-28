@@ -11,6 +11,23 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Univerzita v Amsterdame 
+    url: "https://www.uva.nl/en"
+    location: Amsterdam
+    # company overview
+    overview: Univerzita v Amsterdame (skrátene UvA) je verejná univerzita nachádzajúca sa v Amsterdame v Holandsku. Je to jedna z najväčších výskumných univerzít v Európe so silným dôrazom na interdisciplinárny výskum a spoluprácu.
+  positions:
+  - designation: PhD kandidát v časticovej fyzike
+    start: Sep 2025
+    end: 
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - výskoum diHiggsových eventov v experimente ATLAS
+    - Asistent výučby
+    - Školiteľ magisterských a bakalárskych študentov
+
+- company:
     name: BEZ TRANSFORMÁTORY a.s.
     url: "https://bez-transformers.com"
     location: Bratislava

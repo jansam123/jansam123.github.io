@@ -31,7 +31,7 @@ projects:
     #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
     # summary: Estimation of fake tau background using Fake Factor Method.
     summary: Odhad fake tau pozadia pomocou Fake Factor Method.
-    tags: ["academic", "ATLAS", "CERN"]
+    tags: ["akadémia", "ATLAS", "CERN"]
 
   - name: Identifikácia jetov pomocou hlbokých neurónových sietí
     # logo: /images/sections/projects/kubernetes.png
@@ -42,7 +42,15 @@ projects:
     #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
     # summary: Estimation of fake tau background using Fake Factor Method.
     summary: Framework na vývoj neurónových sietí pre identifikáciu jetov. Identifikácia jetov je klasifikácia jetov na základe ich pôvodu. Využíva sa na rozlíšenie medzi jetmi iniciovanými kvarkom a gluónom.
-    tags: ["academic", "ATLAS", "Transformer", "Deep Learning"]
+    tags: ["akadémia", "ATLAS", "Transformer", "Deep Learning"]
+
+  - name: Kalibrácia Quark Gluon Taggera
+    # logo: /images/sections/projects/kubernetes.png
+    role: Autor
+    timeline: "apríl 2024 - september 2025"
+    url: https://gitlab.cern.ch/atlas-jetetmiss/tagging/r22calibration/r22quarkgluon
+    summary: Framework pre kalibráciu taggera kvarkov a gluónov využívajúci dáta z experimentu ATLAS. Kalibrácia sa vykonáva pomocou maticovej metódy a novej metódy jet topics. Repozitár je prístupný len pre členov ATLASu.
+    tags: ["akadémia", "ATLAS", "kalibrácia"]
 
   # - name: Measurement and simulation of a temperature field
   - name: Meranie a simulácia teplotného poľa
@@ -52,7 +60,7 @@ projects:
     url: "https://arxiv.org/abs/1909.01460"
     # summary: Measurements of surface temperature fields used to determine the heat transfer by conduction and convection from an inhomogeneously heated metallic tube into environment.
     summary: Meranie povrchových teplotných polí, ktoré slúžia na určenie prenosu tepla pomocou kondukcie a konvekcie z nehomogénnej ohriatej kovovej trubice do prostredia.
-    tags: ["academic", "Heat Equation"]
+    tags: ["akadémia", "Heat Equation"]
 
   - name: DiaDash
     role: Vývojár

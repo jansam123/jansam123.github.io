@@ -9,16 +9,23 @@ section:
   # hideTitle: true
 
 degrees:
+  - name: PhD v časticovej fyzike
+    icon: fa-graduation-cap
+    timeframe: 2025-súčasnosť
+    institution:
+      name: Nikhef / University of Amsterdam
+      url: "https://www.nikhef.nl/en/"
+
   - name: Mgr. Časticová a jadrová fyzika
     icon: fa-graduation-cap
-    timeframe: 2023-
+    timeframe: 2023-2025
     institution:
       name: Matematicko-fyzikálna fakulta, Univerzita Karlova
       url: "https://www.mff.cuni.cz/"
-    # grade: #(optional)
-    #   scale: CGPA
-    #   achieved: 3.5
-    #   outOf: 4
+    grade: #(optional)
+      scale: ECTS
+      achieved: červený diplom, 1 (A)
+      outOf: 4 (F) 
     takenCourses: #(optional)
       # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
       showGrades: false
@@ -32,32 +39,10 @@ degrees:
           achieved: 1 (A)
         - name: Fyzika detektorov a urýchľovačov
           achieved: 1 (A)
-    # publications: #(optional)
-    #   - title: Fake tau background in excited tau search
-    #     url: "https://drive.google.com/file/d/1k7So9AuAj62re_s0pZRw0U2cgkDUlR0y/view?usp=sharing"
-    #   - title: Quark\Gluon Jet Tagging (Bachelor Thesis)
-    #     url: "https://github.com/jansam123/bachelor_thesis"
-    # extracurricularActivities: #(optional)
-    #   - Summer School Project
-  - name: DESY, Hamburg
-    icon: fa-sun
-    timeframe: 2024
-    institution:
-      name: Terascale Monte Carlo School
-      url: "https://indico.desy.de/event/42810/overview"
-    # grade: #(optional)
-    #   scale: Grade
-    #   achieved: A
-      # outOf: 100
-    takenCourses: #(optional)
-      showGrades: false
-      collapseAfter: 3
-      courses:
-        - name: Sherpa, Herwig, Pythia cvičenie
-        - name: Parton Shower and Matching/Merging
-        - name: NLO and higher-order calculations
-        - name: PDFs, uncertainties
-        - name: Resummation
+    publications: #(optional)
+      - title: Kalibrace AI algoritmu na rozlišování kvarkových a gluonových jetů (Magisterská práca, pod vedením Mgr. Vojtěcha Pleskota Ph.D.)
+        url: "https://dspace.cuni.cz/handle/20.500.11956/199554"
+
 
   - name: Bc. Fyzika
     icon: fa-graduation-cap
@@ -92,6 +77,26 @@ degrees:
         url: "https://github.com/jansam123/bachelor_thesis"
     extracurricularActivities: #(optional)
       - Letný študentský projekt
+
+  - name: DESY, Hamburg
+    icon: fa-sun
+    timeframe: 2023
+    institution:
+      name: Terascale Monte Carlo School
+      url: "https://indico.desy.de/event/42810/overview"
+    # grade: #(optional)
+    #   scale: Grade
+    #   achieved: A
+      # outOf: 100
+    takenCourses: #(optional)
+      showGrades: false
+      collapseAfter: 3
+      courses:
+        - name: Sherpa, Herwig, Pythia cvičenie
+        - name: Parton Shower and Matching/Merging
+        - name: NLO and higher-order calculations
+        - name: PDFs, uncertainties
+        - name: Resummation
 
   - name: Letná škola
     icon: fa-sun

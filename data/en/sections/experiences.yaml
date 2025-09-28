@@ -13,6 +13,22 @@ section:
 
 experiences:
 - company:
+    name: University of Amsterdam 
+    url: "https://www.uva.nl/en"
+    location: Amsterdam
+    # company overview
+    overview: The University of Amsterdam (abbreviated as UvA) is a public university located in Amsterdam, Netherlands. It is one of the largest research universities in Europe with a strong emphasis on interdisciplinary research and collaboration.
+  positions:
+  - designation: PhD Candidate in Particle Physics
+    start: Sep 2025
+    end: 
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - diHiggs research at the ATLAS experiment
+    - Teaching assistant 
+    - Supervising Master and Bachelor students
+- company:
     name: BEZ TRANSFORMERS a.s.
     url: "https://bez-transformers.com"
     location: Bratislava
