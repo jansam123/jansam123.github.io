@@ -21,7 +21,30 @@
 &lt;li>&lt;strong>Hluboké učení&lt;/strong> &lt;a href="https://is.cuni.cz/studium/eng/predmety/index.php?do=predmet&amp;amp;kod=NPFL138" target="_blank" rel="noopener">NPFL138&lt;/a> - hlboké učenie, príklady+teória, náročné, témy do hĺbky, najmodernejšie techniky AI, Z za úlohy, Zk písomná alebo v prípade splnenia všetkých úloh rovno za 1, &lt;a href="https://ufal.mff.cuni.cz/courses/npfl138/2324-summer" target="_blank" rel="noopener">viac info&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="some-random-linkhttpscernboxcernchswiebtviikkf6uke">&lt;a href="https://cernbox.cern.ch/s/WIEBTViIkkf6UkE" target="_blank" rel="noopener">Some random link&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://samueljankovych.com/posts/prog_fyz/meme.jpg" alt="Meme">&lt;/p></description></item><item><title>Setup MFF UK GPULab</title><link>https://samueljankovych.com/posts/gpulab/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/gpulab/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>&lt;img src="https://samueljankovych.com/posts/prog_fyz/meme.jpg" alt="Meme">&lt;/p></description></item><item><title>Running Athena</title><link>https://samueljankovych.com/posts/athena/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/athena/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ol>
+&lt;li>Get a CERN login.&lt;/li>
+&lt;li>Generate a &lt;a href="https://linux.web.cern.ch/docs/kerberos-access/" target="_blank" rel="noopener">Kerberos&lt;/a> authentication ticket using the command and type your password when prompted:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>kinit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check if the ticket is generated using:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>klist
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>klist -f
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Create a fork of the &lt;a href="https://gitlab.cern.ch/atlas/athena" target="_blank" rel="noopener">Athena repository&lt;/a>. THE PROJECT NAME MUST BE AS THE ORIGINAL: &lt;code>athena&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="setup-a-working-environment">Setup a working environment&lt;/h2>
+&lt;ol start="4">
+&lt;li>ssh to lxplus or other CERN machine.&lt;/li>
+&lt;li>Setup the environment:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>setupATLAS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lsetup git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
+&lt;li>Setup the git-atlas (change &lt;code>sjankovy&lt;/code> to your username):&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git atlas init-config sjankovy --apply
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check if the configuration is correct with &lt;code>git atlas init-config&lt;/code>.&lt;/p></description></item><item><title>Setup MFF UK GPULab</title><link>https://samueljankovych.com/posts/gpulab/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/gpulab/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
 &lt;li>Get a CAS login.&lt;/li>
 &lt;li>Login to gpulab using CAS login, follow this &lt;a href="https://gitlab.mff.cuni.cz/mff/hpc/clusters#installed-software-on-clusters" target="_blank" rel="noopener">guide&lt;/a>.&lt;/li>
@@ -70,10 +93,7 @@
 &lt;h2 id="gitlatexdiffhttpstwikicernchtwikibinviewauthatlasprotectedpubcomlatexdiffgit_latexdiff_command">&lt;a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/PubComLaTeXDiff#git_latexdiff_command" target="_blank" rel="noopener">Git+latexdiff&lt;/a>&lt;/h2>
 &lt;p>Generate a latexdiff between two commits&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git latexdiff 0db4b84289f7554810cfdaacf7bafdbab23466b2 -- --main ANA-JETM-2023-07-PUB.tex
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Jet Identification Deep Neural Network</title><link>https://samueljankovych.com/posts/jidenn/</link><pubDate>Fri, 16 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/jidenn/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This is a deep neural network for jet identification.&lt;/p>
-&lt;h2 id="data">Data&lt;/h2>
-&lt;h2 id="architecture">Architecture&lt;/h2></description></item><item><title/><link>https://samueljankovych.com/posts/arch_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samueljankovych.com/posts/arch_linux/</guid><description>&lt;h1 id="arch-linux-installationhttpswikiarchlinuxorgtitleinstallation_guide">&lt;a href="https://wiki.archlinux.org/title/installation_guide" target="_blank" rel="noopener">Arch Linux Installation&lt;/a>&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://samueljankovych.com/posts/arch_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samueljankovych.com/posts/arch_linux/</guid><description>&lt;h1 id="arch-linux-installationhttpswikiarchlinuxorgtitleinstallation_guide">&lt;a href="https://wiki.archlinux.org/title/installation_guide" target="_blank" rel="noopener">Arch Linux Installation&lt;/a>&lt;/h1>
 &lt;h2 id="download-the-iso-image">Download the ISO image&lt;/h2>
 &lt;p>Download the latest Arch Linux ISO from &lt;a href="https://archlinux.org/download/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;h2 id="create-empty-disk-image">Create empty disk image&lt;/h2>
