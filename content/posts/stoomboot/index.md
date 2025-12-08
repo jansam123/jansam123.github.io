@@ -71,6 +71,7 @@ request_memory = 16GB
 +JobCategory            = "long"
 +UseOS                  = "el9"
 # Number of jobs to submit
+queue 1
 ```
 
 4. Create directories for logs:
