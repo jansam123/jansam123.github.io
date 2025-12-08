@@ -21,7 +21,25 @@
 &lt;li>&lt;strong>Hluboké učení&lt;/strong> &lt;a href="https://is.cuni.cz/studium/eng/predmety/index.php?do=predmet&amp;amp;kod=NPFL138" target="_blank" rel="noopener">NPFL138&lt;/a> - hlboké učenie, príklady+teória, náročné, témy do hĺbky, najmodernejšie techniky AI, Z za úlohy, Zk písomná alebo v prípade splnenia všetkých úloh rovno za 1, &lt;a href="https://ufal.mff.cuni.cz/courses/npfl138/2324-summer" target="_blank" rel="noopener">viac info&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="some-random-linkhttpscernboxcernchswiebtviikkf6uke">&lt;a href="https://cernbox.cern.ch/s/WIEBTViIkkf6UkE" target="_blank" rel="noopener">Some random link&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://samueljankovych.com/posts/prog_fyz/meme.jpg" alt="Meme">&lt;/p></description></item><item><title>Running Athena</title><link>https://samueljankovych.com/posts/athena/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/athena/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>&lt;img src="https://samueljankovych.com/posts/prog_fyz/meme.jpg" alt="Meme">&lt;/p></description></item><item><title>ATLAS hacks</title><link>https://samueljankovych.com/posts/atlas_hacks/</link><pubDate>Wed, 16 Nov 2022 21:16:00 +0600</pubDate><guid>https://samueljankovych.com/posts/atlas_hacks/</guid><description>&lt;h2 id="preparing-plots-for-atlas-publication">Preparing plots for ATLAS publication&lt;/h2>
+&lt;p>All ATLAS plots used for the circulation inside the collaboration must have the &amp;ldquo;ATLAS Internal&amp;rdquo; label if you use data or &amp;ldquo;ATLAS Simulation Internal&amp;rdquo; if you use only simulation.
+However, when preparing plots for publication outside the collaboration, the label &amp;ldquo;Internal&amp;rdquo; must be removed for papers, replaced with &amp;ldquo;Preliminary&amp;rdquo; for CONF or PUB notes, or replaced with &amp;ldquo;Work in progress&amp;rdquo; for thesis/regional conferences.
+Instead of manually recreating all PDF plots, where you only change the label, you can use the following code to automate the process for an existing PDF plot.&lt;/p></description></item><item><title>Nikhef Stoomboot</title><link>https://samueljankovych.com/posts/stoomboot/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/stoomboot/</guid><description>&lt;h1 id="nikhef-stoomboot-tips-and-tricks">Nikhef Stoomboot tips and tricks&lt;/h1>
+&lt;h2 id="copying-from-eos">Copying from &lt;code>/eos&lt;/code>&lt;/h2>
+&lt;p>Use the following to copy from &lt;code>/eos&lt;/code> in interactive session (good for small data):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>setupATLAS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lsetup xrootd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lsetup xcache
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>voms-proxy-info -all
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>xrdcp --streams&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">4&lt;/span> --parallel&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span> -r root://eosatlas.cern.ch//eos/atlas/atlaslocalgroupdisk/higgs/HHbbtautau/Run2Run3/EasyJetNTuples/Prod_v7_merged/HadHad /dcache/atlas/sjankovy/HHbbtautau/Prod_v7_merged
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="setup-for-submitting-jobs-to-copy-from-eos">Setup for submitting jobs to copy from &lt;code>/eos&lt;/code>&lt;/h3>
+&lt;ol>
+&lt;li>Prerequisites. Run these in terminal:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>setupATLAS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lsetup rucio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>voms-proxy-init -voms atlas -valid 192:00 -out ~/.globus/proxies/x509proxy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Be aware that the proxy is valid only for limited time (192 hours in this case), but the jobs can&amp;rsquo;t run longer than that anyway. You might need to resubmit the jobs after the jobs reach maximum runtime.&lt;/p></description></item><item><title>Running DAOD production with Athena</title><link>https://samueljankovych.com/posts/athena/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/athena/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
 &lt;li>Get a CERN login.&lt;/li>
 &lt;li>Generate a &lt;a href="https://linux.web.cern.ch/docs/kerberos-access/" target="_blank" rel="noopener">Kerberos&lt;/a> authentication ticket using the command and type your password when prompted:&lt;/li>
@@ -44,7 +62,19 @@
 &lt;li>Setup the git-atlas (change &lt;code>sjankovy&lt;/code> to your username):&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git atlas init-config sjankovy --apply
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check if the configuration is correct with &lt;code>git atlas init-config&lt;/code>.&lt;/p></description></item><item><title>Setup MFF UK GPULab</title><link>https://samueljankovych.com/posts/gpulab/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/gpulab/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check if the configuration is correct with &lt;code>git atlas init-config&lt;/code>.&lt;/p></description></item><item><title>Setup Arch Linux VM with QEMU</title><link>https://samueljankovych.com/posts/arch_linux/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/arch_linux/</guid><description>&lt;h1 id="arch-linux-installationhttpswikiarchlinuxorgtitleinstallation_guide">&lt;a href="https://wiki.archlinux.org/title/installation_guide" target="_blank" rel="noopener">Arch Linux Installation&lt;/a>&lt;/h1>
+&lt;h2 id="download-the-iso-image">Download the ISO image&lt;/h2>
+&lt;p>Download the latest Arch Linux ISO from &lt;a href="https://archlinux.org/download/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;h2 id="create-empty-disk-image">Create empty disk image&lt;/h2>
+&lt;p>Create the empty file with filled zeros of size 64GB:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>dd &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">=&lt;/span>/dev/zero of&lt;span style="color:#f92672">=&lt;/span>bios.img bs&lt;span style="color:#f92672">=&lt;/span>2G count&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">32&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="boot-the-iso-imagehttpswikiarchlinuxorgtitleqemubooting_in_uefi_mode">&lt;a href="https://wiki.archlinux.org/title/QEMU#Booting_in_UEFI_mode" target="_blank" rel="noopener">Boot the ISO image&lt;/a>&lt;/h2>
+&lt;p>Make sure to have the &lt;code>OVMF&lt;/code> package installed:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pacman -S ovmf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This package contains the UEFI firmware for QEMU.
+Copy the UEFI firmware to the current directory:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cp /usr/share/edk2/x64/OVMF_VARS.fd .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Boot the ISO image with QEMU:&lt;/p></description></item><item><title>Setup MFF UK GPULab</title><link>https://samueljankovych.com/posts/gpulab/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/gpulab/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
 &lt;li>Get a CAS login.&lt;/li>
 &lt;li>Login to gpulab using CAS login, follow this &lt;a href="https://gitlab.mff.cuni.cz/mff/hpc/clusters#installed-software-on-clusters" target="_blank" rel="noopener">guide&lt;/a>.&lt;/li>
@@ -89,20 +119,4 @@
 &lt;/li>
 &lt;li>Open a web browser and go to &lt;a href="https://localhost:9200/win1" target="_blank" rel="noopener">&lt;code>localhost:9200/win1&lt;/code>&lt;/a> to see the TBrowser:&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://samueljankovych.com/posts/tbrowser/TBrowser_screenshot.jpg" alt="TBrowser screenshot">&lt;/p></description></item><item><title>Tips and Tricks</title><link>https://samueljankovych.com/posts/tips_and_tricks/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/tips_and_tricks/</guid><description>&lt;h1 id="tips-and-tricks">Tips and Tricks&lt;/h1>
-&lt;h2 id="gitlatexdiffhttpstwikicernchtwikibinviewauthatlasprotectedpubcomlatexdiffgit_latexdiff_command">&lt;a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/PubComLaTeXDiff#git_latexdiff_command" target="_blank" rel="noopener">Git+latexdiff&lt;/a>&lt;/h2>
-&lt;p>Generate a latexdiff between two commits&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git latexdiff 0db4b84289f7554810cfdaacf7bafdbab23466b2 -- --main ANA-JETM-2023-07-PUB.tex
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://samueljankovych.com/posts/arch_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samueljankovych.com/posts/arch_linux/</guid><description>&lt;h1 id="arch-linux-installationhttpswikiarchlinuxorgtitleinstallation_guide">&lt;a href="https://wiki.archlinux.org/title/installation_guide" target="_blank" rel="noopener">Arch Linux Installation&lt;/a>&lt;/h1>
-&lt;h2 id="download-the-iso-image">Download the ISO image&lt;/h2>
-&lt;p>Download the latest Arch Linux ISO from &lt;a href="https://archlinux.org/download/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;h2 id="create-empty-disk-image">Create empty disk image&lt;/h2>
-&lt;p>Create the empty file with filled zeros of size 64GB:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>dd &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">=&lt;/span>/dev/zero of&lt;span style="color:#f92672">=&lt;/span>bios.img bs&lt;span style="color:#f92672">=&lt;/span>2G count&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">32&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="boot-the-iso-imagehttpswikiarchlinuxorgtitleqemubooting_in_uefi_mode">&lt;a href="https://wiki.archlinux.org/title/QEMU#Booting_in_UEFI_mode" target="_blank" rel="noopener">Boot the ISO image&lt;/a>&lt;/h2>
-&lt;p>Make sure to have the &lt;code>OVMF&lt;/code> package installed:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pacman -S ovmf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This package contains the UEFI firmware for QEMU.
-Copy the UEFI firmware to the current directory:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cp /usr/share/edk2/x64/OVMF_VARS.fd .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Boot the ISO image with QEMU:&lt;/p></description></item></channel></rss>
+&lt;p>&lt;img src="https://samueljankovych.com/posts/tbrowser/TBrowser_screenshot.jpg" alt="TBrowser screenshot">&lt;/p></description></item></channel></rss>
