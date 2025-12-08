@@ -8,7 +8,7 @@ menu:
   sidebar:
     name: TBrowser in Docker
     identifier: tbrowser
-    weight: 1
+    weight: 997
 hero: TBrowser_screenshot.jpg
 ---
 

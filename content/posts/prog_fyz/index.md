@@ -8,7 +8,7 @@ menu:
   sidebar:
     name: Programovanie pre fyzikov
     identifier: prog_fyz
-    weight: 7
+    weight: 999
 ---
 
 Vojtova webstránka: [ipnp.cz/?page_id=8042&lang=CZ](https://ipnp.cz/?page_id=8042&lang=CZ)

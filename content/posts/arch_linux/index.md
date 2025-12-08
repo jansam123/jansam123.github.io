@@ -1,3 +1,17 @@
+---
+title: "Setup Arch Linux VM with QEMU"
+date: 2022-09-18T08:06:25+06:00
+description: "Guide to install Arch Linux in a QEMU virtual machine with network setup using VDE and BIRD routing daemon."
+theme: Toha
+menu:
+  sidebar:
+    name: Arch Linux
+    identifier: arch_linux
+    weight: 1000
+hero: arch.png
+---
+
+
 # [Arch Linux Installation](https://wiki.archlinux.org/title/installation_guide)
 ## Download the ISO image
 Download the latest Arch Linux ISO from [here](https://archlinux.org/download/).

@@ -8,7 +8,7 @@ menu:
   sidebar:
     name: MFF UK GPULab
     identifier: gpulab
-    weight: 2
+    weight: 998
 hero: nvidia_smi.jpg
 ---
 

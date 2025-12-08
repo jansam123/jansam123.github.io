@@ -1,15 +1,15 @@
 ---
-title: "Running Athena"
+title: "Running DAOD production with Athena"
 date: 2022-09-18T08:06:25+06:00
 # hero: /images/posts/writing-posts/analytics.svg
-description: "Setup a working environment for running Athena"
+description: "Setup a working environment for running DAOD production with Athena"
 theme: Toha
 menu:
   sidebar:
     name: Athena
     identifier: athena
-    weight: 8
-hero: ATLAS_logo.png
+    weight: 996
+hero: daod.png
 ---
 
 ## Prerequisites
