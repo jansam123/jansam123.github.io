@@ -23,7 +23,7 @@ Samuel Jankovych</a>
 </span></span></span><span style=display:flex><span><span style=color:#75715e></span>export ATLAS_LOCAL_ROOT_BASE<span style=color:#f92672>=</span>/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 </span></span><span style=display:flex><span>source <span style=color:#e6db74>${</span>ATLAS_LOCAL_ROOT_BASE<span style=color:#e6db74>}</span>/user/atlasLocalSetup.sh
 </span></span><span style=display:flex><span><span style=color:#75715e># run this before submitting the job: `voms-proxy-init -voms atlas -valid 192:00 -out ~/.globus/proxies/x509proxy</span>
-</span></span><span style=display:flex><span>export X509_USER_PROXY<span style=color:#f92672>=</span>/user/sjankovy/.globus/proxies/x509proxy
+</span></span><span style=display:flex><span>export X509_USER_PROXY<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;~/.globus/proxies/x509proxy&#34;</span>
 </span></span><span style=display:flex><span>lsetup xrootd
 </span></span><span style=display:flex><span>lsetup xcache
 </span></span><span style=display:flex><span>voms-proxy-info -all
