@@ -38,7 +38,7 @@ Be aware that the proxy is valid only for limited time (192 hours in this case),
 export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh
 # run this before submitting the job: `voms-proxy-init -voms atlas -valid 192:00 -out ~/.globus/proxies/x509proxy
-export X509_USER_PROXY=/user/sjankovy/.globus/proxies/x509proxy
+export X509_USER_PROXY="~/.globus/proxies/x509proxy"
 lsetup xrootd
 lsetup xcache
 voms-proxy-info -all
