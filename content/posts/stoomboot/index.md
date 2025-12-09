@@ -27,6 +27,7 @@ xrdcp --streams=4 --parallel=8 -r root://eosatlas.cern.ch//eos/atlas/atlaslocalg
 ```bash
 setupATLAS
 lsetup rucio
+mkdir ~/.globus/proxies
 voms-proxy-init -voms atlas -valid 192:00 -out ~/.globus/proxies/x509proxy
 ```
 Be aware that the proxy is valid only for limited time (192 hours in this case), but the jobs can't run longer than that anyway. You might need to resubmit the jobs after the jobs reach maximum runtime.
