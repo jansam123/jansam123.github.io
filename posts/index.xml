@@ -38,6 +38,7 @@ Instead of manually recreating all PDF plots, where you only change the label, y
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>setupATLAS
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lsetup rucio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir ~/.globus/proxies
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>voms-proxy-init -voms atlas -valid 192:00 -out ~/.globus/proxies/x509proxy
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Be aware that the proxy is valid only for limited time (192 hours in this case), but the jobs can&amp;rsquo;t run longer than that anyway. You might need to resubmit the jobs after the jobs reach maximum runtime.&lt;/p></description></item><item><title>Running DAOD production with Athena</title><link>https://samueljankovych.com/posts/athena/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/athena/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
