@@ -24,7 +24,20 @@
 &lt;p>&lt;img src="https://samueljankovych.com/posts/prog_fyz/meme.jpg" alt="Meme">&lt;/p></description></item><item><title>ATLAS hacks</title><link>https://samueljankovych.com/posts/atlas_hacks/</link><pubDate>Wed, 16 Nov 2022 21:16:00 +0600</pubDate><guid>https://samueljankovych.com/posts/atlas_hacks/</guid><description>&lt;h2 id="preparing-plots-for-atlas-publication">Preparing plots for ATLAS publication&lt;/h2>
 &lt;p>All ATLAS plots used for the circulation inside the collaboration must have the &amp;ldquo;ATLAS Internal&amp;rdquo; label if you use data or &amp;ldquo;ATLAS Simulation Internal&amp;rdquo; if you use only simulation.
 However, when preparing plots for publication outside the collaboration, the label &amp;ldquo;Internal&amp;rdquo; must be removed for papers, replaced with &amp;ldquo;Preliminary&amp;rdquo; for CONF or PUB notes, or replaced with &amp;ldquo;Work in progress&amp;rdquo; for thesis/regional conferences.
-Instead of manually recreating all PDF plots, where you only change the label, you can use the following code to automate the process for an existing PDF plot.&lt;/p></description></item><item><title>Nikhef Stoomboot</title><link>https://samueljankovych.com/posts/stoomboot/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/stoomboot/</guid><description>&lt;h1 id="nikhef-stoomboot-tips-and-tricks">Nikhef Stoomboot tips and tricks&lt;/h1>
+Instead of manually recreating all PDF plots, where you only change the label, you can use the following code to automate the process for an existing PDF plot.&lt;/p></description></item><item><title>Install AD free Youtube on LG TV</title><link>https://samueljankovych.com/posts/lg_tv_root/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/lg_tv_root/</guid><description>&lt;h1 id="installing-ad-free-youtube-on-lg-tvhttpsgithubcomwebosbrewwebos-homebrew-channel">&lt;a href="https://github.com/webosbrew/webos-homebrew-channel" target="_blank" rel="noopener">Installing AD free Youtube on LG TV&lt;/a>&lt;/h1>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Developer mode&lt;/strong>
+Put your TV into developer mode using the following guide: &lt;a href="https://www.webosbrew.org/devmode/" target="_blank" rel="noopener">https://www.webosbrew.org/devmode/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Get the SSH key for your TV&lt;/strong>
+Go to the Developer mode app on your TV. Turn on the &amp;ldquo;Dev Mode Status&amp;rdquo; and &amp;ldquo;Key Server&amp;rdquo;.
+Run the following commands to get the SSH key for your TV and add it to your SSH config:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ares-setup-device -a mytv -i &lt;span style="color:#e6db74">&amp;#34;username=prisoner&amp;#34;&lt;/span> -i &lt;span style="color:#e6db74">&amp;#34;host=192.168.1.50&amp;#34;&lt;/span> -i &lt;span style="color:#e6db74">&amp;#34;port=9922&amp;#34;&lt;/span> -i &lt;span style="color:#e6db74">&amp;#34;default=true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ares-novacom --device mytv --getkey
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ares-device --device mytv
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The key lives at &lt;code>~/.ssh/mytv_webos&lt;/code>.&lt;/p></description></item><item><title>Nikhef Stoomboot</title><link>https://samueljankovych.com/posts/stoomboot/</link><pubDate>Sun, 18 Sep 2022 08:06:25 +0600</pubDate><guid>https://samueljankovych.com/posts/stoomboot/</guid><description>&lt;h1 id="nikhef-stoomboot-tips-and-tricks">Nikhef Stoomboot tips and tricks&lt;/h1>
 &lt;h2 id="copying-from-eos">Copying from &lt;code>/eos&lt;/code>&lt;/h2>
 &lt;p>Use the following to copy from &lt;code>/eos&lt;/code> in interactive session (good for small data):&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>setupATLAS
